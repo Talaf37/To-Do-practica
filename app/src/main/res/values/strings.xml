@@ -8,4 +8,5 @@
     <string name="AppToDo">App ToDo</string>
     <string name="todo_categories">categorias</string>
     <string name="prueba">PRUEBA</string>
+    <string name="todo_tasks">Tareas</string>
 </resources>

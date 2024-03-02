@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var rvCategories: RecyclerView
     private lateinit var categoriesAdapter: CategoriesAdapter
+
+    private lateinit var rvTasks: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initComponent() {
         rvCategories = findViewById(R.id.rvCategories)
+        rvTasks = findViewById(R.id.rvTasks)
     }
 
     private fun initUI() {
