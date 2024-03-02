@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
+
+    //nuevos strings
+    <string name="hola">Hola</string>
+    <string name="menu_search">search</string>
+    <string name="menu_icon">icon</string>
+    <string name="AppToDo">App ToDo</string>
+    <string name="todo_categories">categorias</string>
+    <string name="prueba">PRUEBA</string>
 </resources>
