@@ -42,13 +42,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initListeners() {
-        FabAddTask.setOnClickListener {
-
-        }
+        FabAddTask.setOnClickListener { ShowDialog() }
     }
 
     private fun ShowDialog(){
         val dialog = Dialog(this)
+        dialog.setContentView(R.layout.dialog_task)
+        dialog.show()
     }
 
     private fun initComponent() {
