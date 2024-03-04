@@ -14,6 +14,7 @@
         android:backgroundTint="@color/white"
         android:hint="@string/Añadir_tarea"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         />
     
     <RadioGroup

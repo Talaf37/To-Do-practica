@@ -58,18 +58,22 @@ class MainActivity : AppCompatActivity() {
         val rgCategories: RadioGroup = dialog.findViewById(R.id.rgCategories)
 
         btnAddTask.setOnClickListener {
-            val selectedId = rgCategories.checkedRadioButtonId
-            val selectedRadioButton:RadioButton = rgCategories.findViewById(selectedId)
-            val currentCategory:TaskCategory = when(selectedRadioButton.text){
-                "Negocios" -> Business
-                "Personal" -> Personal
-                "Hogar" -> Home
-                else -> Shopping
+            val currentTask = etTask.text.toString()
+            if(currentTask.isNotEmpty()) {
+                val selectedId = rgCategories.checkedRadioButtonId
+                val selectedRadioButton:RadioButton = rgCategories.findViewById(selectedId)
+                val currentCategory:TaskCategory = when(selectedRadioButton.text){
+                    getString(R.string.negocios) -> Business
+                    getString(R.string.personal) -> Personal
+                    getString(R.string.home) -> Home
+                    else -> Shopping
+                }
+
+                tasks.add(Task(currentTask, currentCategory))
+                updateTasks()
+                dialog.hide()
             }
 
-            tasks.add(Task(etTask.text.toString(), currentCategory))
-            updateTasks()
-            dialog.hide()
         }
 
         dialog.show()
