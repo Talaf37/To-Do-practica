@@ -9,11 +9,12 @@
     <color name="white">#FFFFFFFF</color>
 
     //creados
-    <color name="BackgroundColor">#421AB6</color>
+    <color name="BackgroundColor">#1A0065</color>
     <color name="SubtitleTextColor">#959595</color>
     <color name="background_card">#000956</color>
-    <color name="buisness_category">#FFA600</color>
+    <color name="business_category">#FCF402</color>
     <color name="home_category">#59FF00</color>
     <color name="personal_category">#00FFF3</color>
     <color name="shopping_category">#FF0000</color>
+    <color name="FabAddTask">#FF7C00</color>
 </resources>

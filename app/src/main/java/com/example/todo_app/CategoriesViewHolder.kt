@@ -19,7 +19,7 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             TaskCategory.Business -> {
                 CategoryNameTextView.text = "Negocios"
                 divider.setBackgroundColor(
-                    ContextCompat.getColor(divider.context, R.color.buisness_category)
+                    ContextCompat.getColor(divider.context, R.color.business_category)
                 )
             }
             TaskCategory.Home -> {

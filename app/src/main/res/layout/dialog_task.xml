@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/BackgroundColor">
+    
+    <EditText
+        android:id="@+id/etTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="@string/Añadir_tarea"
+        android:textColorHint="@color/white"
+        />
+    
+    <RadioGroup
+        android:id="@+id/rgCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/negocios"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:buttonTint="@color/business_category"
+            />
+        <RadioButton
+            android:id="@+id/rbHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/negocios"
+            android:checked="false"
+            android:textColor="@color/white"
+            android:buttonTint="@color/home_category"
+            />
+        <RadioButton
+            android:id="@+id/rbPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/negocios"
+            android:checked="false"
+            android:textColor="@color/white"
+            android:buttonTint="@color/personal_category"
+            />
+        <RadioButton
+            android:id="@+id/rbShoping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Shoping"
+            android:checked="false"
+            android:textColor="@color/white"
+            android:buttonTint="@color/shopping_category"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>

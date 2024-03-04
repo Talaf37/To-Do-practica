@@ -9,4 +9,7 @@
     <string name="todo_categories">categorias</string>
     <string name="prueba">PRUEBA</string>
     <string name="todo_tasks">Tareas</string>
+    <string name="Añadir_tarea">Añade la Tarea</string>
+    <string name="negocios">Negocios</string>
+    <string name="Shoping">Compras</string>
 </resources>
