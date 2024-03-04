@@ -12,4 +12,7 @@
     <string name="Añadir_tarea">Añade la Tarea</string>
     <string name="negocios">Negocios</string>
     <string name="Shoping">Compras</string>
+    <string name="CreateTask">Crear Tarea</string>
+    <string name="home">Hogar</string>
+    <string name="personal">Personal</string>
 </resources>

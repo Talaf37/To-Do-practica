@@ -3,6 +3,10 @@ package com.example.todo_app
 import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
@@ -48,6 +52,26 @@ class MainActivity : AppCompatActivity() {
     private fun ShowDialog(){
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.dialog_task)
+
+        val btnAddTask: Button = dialog.findViewById(R.id.btnAddTask)
+        val etTask: EditText = dialog.findViewById(R.id.etTask)
+        val rgCategories: RadioGroup = dialog.findViewById(R.id.rgCategories)
+
+        btnAddTask.setOnClickListener {
+            val selectedId = rgCategories.checkedRadioButtonId
+            val selectedRadioButton:RadioButton = rgCategories.findViewById(selectedId)
+            val currentCategory:TaskCategory = when(selectedRadioButton.text){
+                "Negocios" -> Business
+                "Personal" -> Personal
+                "Hogar" -> Home
+                else -> Shopping
+            }
+
+            tasks.add(Task(etTask.text.toString(), currentCategory))
+            updateTasks()
+            dialog.hide()
+        }
+
         dialog.show()
     }
 
@@ -65,5 +89,10 @@ class MainActivity : AppCompatActivity() {
         tasksAdapter = TasksAdapter(tasks)
         rvTasks.layoutManager = LinearLayoutManager(this)
         rvTasks.adapter = tasksAdapter
+    }
+
+    private fun updateTasks() {
+        tasksAdapter.notifyDataSetChanged()
+
     }
 }

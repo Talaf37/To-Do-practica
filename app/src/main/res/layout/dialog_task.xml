@@ -4,6 +4,7 @@
     android:layout_width="250dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:padding="16dp"
     android:background="@color/BackgroundColor">
     
     <EditText
@@ -33,7 +34,7 @@
             android:id="@+id/rbHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/negocios"
+            android:text="@string/home"
             android:checked="false"
             android:textColor="@color/white"
             android:buttonTint="@color/home_category"
@@ -42,7 +43,7 @@
             android:id="@+id/rbPersonal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/negocios"
+            android:text="@string/personal"
             android:checked="false"
             android:textColor="@color/white"
             android:buttonTint="@color/personal_category"
@@ -58,5 +59,13 @@
             />
 
     </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/AddTask"
+        android:text="@string/CreateTask"
+        />
 
 </LinearLayout>

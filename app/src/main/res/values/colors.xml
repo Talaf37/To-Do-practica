@@ -17,4 +17,5 @@
     <color name="personal_category">#00FFF3</color>
     <color name="shopping_category">#FF0000</color>
     <color name="FabAddTask">#FF7C00</color>
+    <color name="AddTask">#920000</color>
 </resources>
